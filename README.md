@@ -1,2 +1,2 @@
 # Everything
-It is an Open-Source Realtime COVID19-Tracker Using PHP, Bootstrap 4.
+Feel free to share any type of your code in this repo.
