@@ -1,0 +1,39 @@
+/* https://www.facebook.com/mamta.sinha.7906932/posts/1207615366274813 */
+/* subscribed by code house */
+#include<iostream>
+#include<time.h> /* for sleep() function */
+using namespace std;
+int main()
+{
+    int hour,minute,second;
+    hour=minute=second=0;
+    while(1) /* infinite loop */
+    {
+        system("cls");
+
+        /* print time in HH:MM:SS format */
+        cout<<hour<<":"<<minute<<":"<<second;
+
+        fflush(stdout);
+
+        /* increase second*/
+        second++;
+
+        /* update hour, minute and second*/
+        if(second==60){
+            minute++;
+            second=0;
+        }
+        if(minute==60){
+            hour++;
+            minute=0;
+        }
+        if(hour==24){
+            hour=0;
+            minute=0;
+            second=0;
+        }
+        _sleep(1); /*wait for 1 second */
+
+    } 
+}
