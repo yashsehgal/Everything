@@ -1,0 +1,55 @@
+1.UPLOADING AN IMAGE – LOAD IMAGE:
+% --- Executes on button press in upload.
+function pushbutton1_Callback (hObject, eventdata, handles)
+% hObject handle to pushbutton1 (see GCBO)
+% eventdata reserved - to be defined in a future version of MATLAB
+% handles structure with handles and user data (see GUIDATA)
+[FileName, PathName] =uigetfile({'*.jpg;*.png'}, 'Select Query Image');
+%f = fullfile('PathName','FileName');
+f1=strcat(PathName,FileName);
+im=imread(f1);
+%axes(handles.axes1);
+imshow(im);
+save('image.mat','f1')
+2. COLOR TO GRAY (RGB TO GRAY)-
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback (hObject, eventdata, handles)
+% hObject handle to pushbutton3 (see GCBO)
+% eventdata reserved - to be defined in a future version of MATLAB
+% handles structure with handles and user data (see GUIDATA)
+load('image.mat')
+im=imread(f1);
+im=rgb2gray(im);
+%axes(handles.axes1);
+imshow(im);
+3. HISTOGRAM –
+% --- Executes on button press in pushbutton5.
+function pushbutton5_Callback(hObject, eventdata, handles)
+% hObject handle to pushbutton5 (see GCBO)
+% eventdata reserved - to be defined in a future version of MATLAB
+% handles structure with handles and user data (see GUIDATA)
+load('image.mat')
+im= imread(f1);
+im = rgb2gray(im);
+figure, imhist(im);
+4. IMAGE NEGATIVE –
+% --- Executes on button press in pushbutton6.
+function pushbutton6_Callback (hObject, eventdata, handles)
+% hObject handle to pushbutton6 (see GCBO)
+% eventdata reserved - to be defined in a future version of MATLAB
+% handles structure with handles and user data (seeGUIDATA)
+load('image.mat')
+pic=imread(f1);
+pic_neg = ait_imneg(pic);
+axes(handles.axes1);
+imshow(pic_neg);
+5. INCREASE BRIGHTNESS
+% --- Executes on button press in pushbutton8.
+function pushbutton8_Callback (hObject, eventdata, handles)
+% hObject handle to pushbutton8 (see GCBO)
+% eventdata reserved - to be defined in a future version of MATLAB
+% handles structure with handles and user data(see GUIDATA)
+load('image.mat')
+im = imread(f1)
+im1= im+50
+figure, imshow(im1)
