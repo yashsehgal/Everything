@@ -1,0 +1,45 @@
+#https://www.facebook.com/permalink.php?story_fbid=2376635879298242&id=100008555587566
+#subscribed by heena rana
+
+
+#include<iostream>
+// using namespace std;
+
+
+// inline  int product (int a,int b){ //don't use inline in recursion ,static variables,
+//       //static int c=0;  //these will execute once 
+//      // c=c+1;    
+//       return a*b;
+// }
+
+// // we learn inline function and default function  
+// int moneyreceived(int current,float factor=1.4){ //default 
+//     return current * factor;
+
+               
+// }
+// int main(){
+//        int a,b;
+//     //    cout<<"enter the value of a and b "<<endl;
+//     //    cin>>a>>b;
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;   
+//     //    cout<<"the sum of"<<product(a,b)<<endl;  
+//        int money =100000; 
+//          cout<<"if u have "<<money<<"rs in bank u will reiceive"<<moneyreceived<<(money)<<"rs after 1 year"<<endl;
+//          cout<<"for vip:  u have "<<money<<"rs in bank u will reiceive"<<moneyreceived<<(money,1.1)<<"rs after 1 year";
+
+//     return 0;
+// }
+
+
+//tut18 recursions and recursive function 
+
+// recursion function who called himself until an unless base condition satisfy
