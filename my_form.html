@@ -1,0 +1,259 @@
+<!--https://www.facebook.com/silena.zerica/posts/384217752596870-->
+subscribed by akash maurya 
+<html>
+<head>
+
+
+<title>
+my webpage
+</title>
+<style>
+
+	#toparea{
+		background-color: blue;
+		height: 30px;
+
+	}
+body{
+	background-image:
+	url('image.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
+}
+
+h1{
+	text-align:center;
+	color:white;
+	background-color:red;
+	margin:0px 300px 0px 300px;
+	border-radius:25px;
+	border:dotted black 3px;
+}
+
+h3{
+	text-align:center;
+	color:black;
+	font-family:oldtown,fantasy;
+	font-size:40;
+	background:white;
+	border:3px solid #e0ffff;
+	border-radius:15px;
+	margin:0px 400px 0px 400px;
+
+
+}
+h5{
+	color:black;
+	text-align:center;
+	font-family:palatino,serif;
+	font-size:20;
+	border-bottom:2px black solid;
+}
+h6{
+	color:black;
+	text-align:center;
+	font-family:palatino,serif;
+	font-size:15;
+	
+}
+
+
+.regform{
+	max-width:500px;
+	margin: 2rem auto;
+	border:3px solid #e0ffff;
+	padding:2rem;
+	background-color:white;
+	border-radius:15px;
+	font-family:verdana;
+}
+.container{
+text-align:center;}
+.btn{
+	border:2px solid white;
+	background:blue;
+	padding: 10px 20px;
+	font-size:20px;
+	font-family:montserrat;
+	cursor:pointer;
+	margin:2px;
+	color:white;
+	transition: 0.8s;
+	width:300px;
+	border-radius:21px;
+}
+
+.btn:hover{
+	color:black;	
+}
+
+input{
+	padding:10px;
+	font-size:inherit;
+}
+
+input[type="text"]
+{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+background:#e0ffff;
+}
+
+input[type="email"]
+{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	background:#e0ffff;
+}
+
+input[type="password"]
+{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	background:#e0ffff;
+}
+
+input[type="number"]
+{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	background:#e0ffff;
+}
+
+
+
+
+input[type="date"]
+{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	background:#e0ffff;
+}
+textarea{
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	background:#e0ffff;
+}
+input:focus{
+	background:white;
+}
+
+textarea:focus{
+	background:white;
+}
+.custom-select{
+	position:relative;
+	font-family:verdana;
+}
+
+
+
+
+
+</style>
+</head>
+<body background-image src="image.jpg">
+<h1 id="toparea">KCC INSTITUTE</h1>
+<h4 align="center"><em>
+"A COLLEGE THAT OFFER MORE THAN A DEGREE"</em></h4>
+<h5 align="center">The Aim of the college, for the indivisual student is to eliminate the need in his life him because a self-educating man.</h5>
+<h6>Now you can register here for admission in kcc institiue of technology and mangement</h6>
+
+<h3><span>
+student registration form</span></h3>
+
+<form class="regform" onsubmit="return validation();">
+<p>First name <input type="text" size="40" id="fname" placeholder="enter your first name"></p>
+<p>Last name <input type="text" size="40" id="lname" placeholder="enter your last name"></p>
+<p>Email ID<input type="email" id="email" size ="40" placeholder="abc@gmail.com"></p>
+<p>password <input type="password" size="40" id="password" placeholder="enter password"></p>
+<p>Contact No. <input type="number" size="40" id="number" placeholder="enter your 10 digit mobile number"></p>
+<p>Gender::<input type="radio" name ="gender" value="male">male<input type="radio" name="gender" value="female">
+female </p>
+<p>DOB<input type ="date" name="birthday"></p>
+
+<p>Address<textarea placeholder="fill your complete address here"id ="address" cols="30" rows="5"> </textarea></p>
+
+<label for="myfile"> upload your passport size photo</label>
+<input type="file" id="myfile" name="myfile">
+<br>
+
+<br>
+Hobbies::
+<input type="checkbox" name="dancing" value="dancing">
+dancing</input>
+<input type="checkbox" name="singing" value="singing">
+singing</input>
+<input type="checkbox" name="programming" value="programming">
+programming</input>
+<input type="checkbox" name="writing" value="writing">
+writing</input>
+<input type="checkbox" name="others" value="others">
+others</input>
+</p>
+
+<div class="custom-select">
+Select your course
+<select type="text" name="Subject">
+<option>select</option>
+<option>B.TECH</option>
+<option>BBA</option>
+<option>B.COM</option>
+<option>BSc</option>
+<option>BCA</option>
+<option>BJMC</option>
+</select>
+</div>
+<div class="container">
+<button class="btn">Apply Now </button>
+</form>
+
+<script type="text/javascript">
+function 
+ validation()
+ {
+	 var fname = document.getElementById('fname').value;
+	  var lname = document.getElementById('lname').value;
+	   var email = document.getElementById('email').value;
+	    var password = document.getElementById('password').value;
+		 var number = document.getElementById('number').value;
+		var address= document.getElementById('address').value;
+		
+		 if (fname =='' || lname==''||email==''||password==''||number==''||address=='')
+		 {
+			 alert('all fields are required');
+			 return false;
+		 }
+		  else{
+			 return true;
+		 }
+		 }
+		
+		
+
+ </script>
+ </div>
+</body>
+
+
+
+</html>
